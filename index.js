@@ -17,11 +17,11 @@ function getValidate() {
 	return Validate;
 }
 
-const toggleValidate = () =>{
+const toggleValidate = () => {
 	Validate = !Validate;
 
-	return {state: val};
-}
+	return {state: Validate};
+};
 
 module.exports = {
 	superstruct,

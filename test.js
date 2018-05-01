@@ -1,7 +1,7 @@
 import test from 'ava';
 import m from '.';
 
-test.todo("Validate Switch Test go go go !!!")
+test.todo('Validate Switch Test go go go !!!');
 
 test.before('setValidate', t => {
 	const inputVal = 123;
