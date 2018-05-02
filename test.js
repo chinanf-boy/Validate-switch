@@ -22,3 +22,15 @@ test('getValidate', t => {
 test('toggleValidate', t => {
 	t.is(m.toggleValidate().state, true);
 });
+
+test.after('debugSwitch', t => {
+	t.is(m.debugSwitch(), true);
+});
+
+test.after('getDebug', t => {
+	t.is(m.getDebug(), true);
+});
+
+test.after('Debug getValidate', t => {
+	t.is(m.getValidate(), true);
+});
