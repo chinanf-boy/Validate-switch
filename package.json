@@ -1,6 +1,6 @@
 {
 	"name": "validate-switch",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "全局验证开关 global Validate data Switch , a thing",
 	"license": "MIT",
 	"main": "dist/validate-switch.js",
