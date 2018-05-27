@@ -3,6 +3,7 @@
 	"version": "0.0.2",
 	"description": "全局验证开关 global Validate data Switch , a thing",
 	"license": "MIT",
+	"main": "dist/validate-switch.js",
 	"repository": "chinanf-boy/validate-switch",
 	"author": {
 		"name": "chinanf-boy",
@@ -14,10 +15,18 @@
 	},
 	"scripts": {
 		"test": "xo && nyc ava",
+		"build": "microbundle",
+		"prepublish": "npm run build",
 		"npmUp": "npm version patch && npm publish",
 		"git": "git push && git push --tags",
 		"pub": "npm run test && npm run npmUp && npm run git"
 	},
+	"size-limit": [
+		{
+			"path": "dist/validate-switch.js",
+			"limit": "4 KB"
+		}
+	],
 	"files": [
 		"index.js"
 	],
@@ -30,6 +39,7 @@
 	"devDependencies": {
 		"ava": "^0.20.0",
 		"codecov": "^2.2.0",
+		"microbundle": "^0.4.4",
 		"nyc": "^11.0.0",
 		"xo": "^0.18.2"
 	},
